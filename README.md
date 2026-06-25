@@ -5,6 +5,8 @@
 A hard, deterministic single-file coding task for probing how much a quantization
 degrades a model. Fully auto-graded — no human grader in the loop.
 
+Built to test local AI deploymemnts.
+
 ## What it measures
 
 This is a high-variance capability stress test, not a clean readout of "quant quality."
