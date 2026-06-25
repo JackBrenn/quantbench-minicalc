@@ -32,7 +32,7 @@ off-by-one or rounding drift.
 
 ## Usage
 
-1. Paste the **Challenge Prompt** section of `minicalc-challenge.md` into a model in a
+1. Paste the **Challenge Prompt** section of `minicalc-challenge.md` or the contents of **ai-challenge-prompt.md** into a model in a
    fresh context.
 2. Save the output as a `.py` file.
 3. Grade it:
