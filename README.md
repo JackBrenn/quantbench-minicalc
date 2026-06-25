@@ -5,7 +5,7 @@
 A hard, deterministic single-file coding task for probing how much a quantization
 degrades a model. Fully auto-graded — no human grader in the loop.
 
-Built to test local AI deploymemnts.
+Built to test local AI deployments.
 
 ## What it measures
 
