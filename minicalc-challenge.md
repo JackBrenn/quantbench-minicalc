@@ -181,16 +181,3 @@ Notes:
 - Categories 1, 2, and 9 intentionally overlap on sqrt: a truncating sqrt is a
   multi-category failure (wrong values + wrong rounding + example-anchoring), matching
   how the validation runs were scored.
-
-## Validation baselines (same model, 10 runs)
-
-| Config | Scores (manual grading) | Mean |
-|---|---|---|
-| NVFP4 weights + FP8 KV (model A) | 96, 95, 80 | 90.3 |
-| NVFP4 weights + FP8 KV (model B) | 96, 86, 94, 92 | 92.0 |
-| NVFP4 weights + FP16 KV (model A) | 86, 98, 84 | 89.3 |
-
-Within-config spread (±7–9) exceeded between-config gaps (~2), i.e. FP8 KV cache was
-free at this model scale. Use ≥3 runs per config and compare distributions, never
-single scores. A *new* failure class on the golden path (categories 1–2) is the
-signal that a weight quant is genuinely degrading — it never occurred in validation.
